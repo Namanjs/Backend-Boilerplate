@@ -1,0 +1,1 @@
+This repository provides a standardized backend boilerplate implemented with JavaScript, Express.js, MongoDB, Docker, and Redis.
