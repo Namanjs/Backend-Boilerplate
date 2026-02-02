@@ -28,3 +28,5 @@ const uploadToCloudinary = async(localFilePath, foldername = "boilerpate") => {
         return null;
     }
 }
+
+export { uploadToCloudinary }

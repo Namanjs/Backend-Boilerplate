@@ -20,4 +20,8 @@ app.use(cors({
 
 app.use(cookieParser(process.env.COOKIE_SECRET));
 
+import userRouter from "./routers/user.router.js";
+
+app.use("/api/v1/user", userRouter)
+
 export {app};
