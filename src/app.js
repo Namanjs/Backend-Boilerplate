@@ -1,6 +1,7 @@
 import express from 'express';
 import cors from "cors";
 import cookieParser from 'cookie-parser';
+import { errorHandler } from './middlewares/errorHandler.js';
 
 const app = express();
 
@@ -23,5 +24,7 @@ app.use(cookieParser(process.env.COOKIE_SECRET));
 import userRouter from "./routers/user.router.js";
 
 app.use("/api/v1/user", userRouter)
+
+app.use(errorHandler);
 
 export {app};
